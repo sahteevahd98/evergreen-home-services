@@ -193,6 +193,38 @@ footer {
 }
 
 /*---------------------------
+    Page Header
+---------------------------*/
+
+.page-header {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+}
+
+/*--------------------------
+    About Section
+---------------------------*/
+
+.about-section {
+    padding: 70px 0;
+}
+
+.about-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+/*---------------------------
     Responsive Design
 --------------------------*/
 

@@ -224,6 +224,39 @@ footer {
     margin-bottom: 20px;
 }
 
+/*-------------------------
+    Services Page
+--------------------------*/
+
+.services-page  {
+    padding: 70px 0;
+}
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.service-grid .service-card {
+    padding: 35px;
+}
+
+.service-card h2 {
+    margin-bottom: 15px;
+}
+
+.service-card ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.service-card li {
+    margin-bottom: 8px;
+}
+
 /*---------------------------
     Responsive Design
 --------------------------*/
@@ -233,6 +266,10 @@ footer {
     .navbar-container{
         flex-direction:column;
         gap: 20px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
     }
 
     .nav-links {

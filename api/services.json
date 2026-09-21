@@ -1,0 +1,32 @@
+[
+    {
+        "id": "home-repair",
+        "name": "Home Repairs",
+        "description": "Basic repairs and fixes to help keep your home working properly."
+    },
+    {
+        "id": "home-maintenance",
+        "name": "Home Maintenance",
+        "description": "Routine maintenance to help prevent small problems from becoming bigger ones."
+    },
+    {
+        "id": "outdoor-services",
+        "name": "Outdoor Services",
+        "description": "Basic outdoor maintenance and property services to keep your home looking its best."
+    },
+    {
+        "id": "painting",
+        "name": "Painting",
+        "description": "Interior and exterior painting services to give your home a fresh look."
+    },
+    {
+        "id": "installation",
+        "name": "Installation",
+        "description": "Basic installation services for fixtures, hardware, and home accessories."
+    },
+    {
+        "id": "custom-projects",
+        "name": "Custom Projects",
+        "description": "Have a project that does not fit our regular services? Contact us to discuss your needs."
+    }
+]

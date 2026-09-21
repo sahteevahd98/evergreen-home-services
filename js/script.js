@@ -2,31 +2,36 @@ console.log("SCRIPT.JS IS WORKING");
 
 
 /* ------------------------------
-   Contact Form
+   Contact Form - jQuery
 ------------------------------ */
 
-const contactForm = document.getElementById("contact-form");
+if (typeof $ !== "undefined") {
 
-if (contactForm) {
+    const contactForm = $("#contact-form");
 
-    const formMessage = document.getElementById("form-message");
+    if (contactForm.length) {
 
-    contactForm.addEventListener("submit", function (event) {
+        const formMessage = $("#form-message");
 
-        event.preventDefault();
+        contactForm.on("submit", function (event) {
 
-        const name = document.getElementById("name").value;
-        const service = document.getElementById("service").value;
+            event.preventDefault();
 
-        formMessage.textContent =
-            `Thanks, ${name}! We received your request for ${service}.`;
+            const name = $("#name").val();
+            const service = $("#service option:selected").text();
 
-        contactForm.reset();
+            formMessage
+                .hide()
+                .text(`Thanks, ${name}! We received your request for ${service}.`)
+                .fadeIn(500);
 
-    });
+            contactForm[0].reset();
+
+        });
+
+    }
 
 }
-
 
 
 /* ------------------------------
@@ -55,7 +60,7 @@ if (serviceList) {
 
             serviceList.innerHTML = "";
 
-            data.forEach(service=> {
+            data.forEach(service => {
 
                 const serviceCard = document.createElement("article");
 
@@ -94,9 +99,10 @@ if (serviceList) {
 
 }
 
-/*------------------------------
-    Preselect Service
-------------------------------*/
+
+/* ------------------------------
+   Preselect Service
+------------------------------ */
 
 const serviceSelect = document.getElementById("service");
 

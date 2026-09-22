@@ -8,29 +8,77 @@
 
     <title>Evergreen Home Services</title>
 
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-            <h1>Evergreen Home Services</h1>
+<header class="navbar">
+        
+    <div class="container">
 
-        <nav>
-                <a href="index.html">Home</a>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
+        <nav class="navbar navbar-expand-lg"> 
 
-                <li>
-                    <a href="services.html">Services</a>
-                </li>
+            <a class="navbar-brand" href="index.html">
+                Evergreen Home Services
+            </a>
 
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-       
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavigation"
+                aria-controls="mainNavigation"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavigation">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item"> 
+
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="services.html">
+                            Services
+                        </a>
+
+                    
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="contact.html">
+                            Contact
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
         </nav>
 
     </div>
@@ -61,58 +109,62 @@
 
         <section class="services-preview">
 
-            <h2>Our Services</h2>
+            <div class="container">
 
-            <div class="service-container">
+                <h2>Our Services</h2>
 
-                <article class="service-card">
+                <div class="row service-container">
 
-                    <h3>Home Repair</h3>
+                    <article class="col-md-4 service-card">
 
-                    <p>
-                        We provide basic home repair and maintenance services for your everyday needs.
-                    </p>
+                        <h3>Home Repair</h3>
 
-                </article>
+                        <p>
+                            We provide basic home repair and maintenance services for your everyday needs.
+                        </p>
 
-                <article class="service-card">
+                    </article>
 
-                    <h3>Home Maintenance</h3>
+                    <article class="col-md-4 service-card">
 
-                    <p>
-                        Regular maintenance helps keep your home working properly.
-                    </p>
+                        <h3>Home Maintenance</h3>
 
-                </article>
+                        <p>
+                            Regular maintenance helps keep your home working properly.
+                        </p>
 
-                <article class="service-card">
+                    </article>
 
-                    <h3>Outdoor services</h3>
+                    <article class="col-md-4 service-card">
 
-                    <p>
-                        We provide basic outdoor maintenance and improvement services.
-                    </p>
+                        <h3>Outdoor services</h3>
 
-                </article>
+                        <p>
+                            We provide basic outdoor maintenance and improvement services.
+                        </p>
 
-            </div>
+                    </article>
+
+                    </div>
+
+                </div>
 
            
-        </section>
+            </section>
 
-        <section class="call-to-action">
+            <section class="call-to-action">
 
-            <h2>Need Help With Your Home?</h2>
+                <h2>Need Help With Your Home?</h2>
 
-            <p>
-                Contact us today to learn about our services.
-            </p>
+                <p>
+                    Contact us today to learn about our services.
+                </p>
 
-            <a href="contact.html" class="button">
-                Contact Us
-            </a>
+                <a href="contact.html" class="button">
+                    Contact Us
+                </a>
 
-        </section>
+            </section>
 </main>
 
 <!--- Footer -->
@@ -122,6 +174,10 @@
     <p>&copy; 2026 Evergreen Home Services</p>
 
 </footer>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
     
 </body>
 

@@ -1,0 +1,23 @@
+{
+  "name": "evergreen-home-services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/style.scss css/style.css",
+    "sass:watch": "sass --watch scss/style.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahteevahd98/evergreen-home-services.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sahteevahd98/evergreen-home-services/issues"
+  },
+  "homepage": "https://github.com/sahteevahd98/evergreen-home-services#readme",
+  "devDependencies": {
+    "sass": "^1.105.0"
+  }
+}
